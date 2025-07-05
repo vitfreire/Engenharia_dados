@@ -1,0 +1,12 @@
+servidores:               
+  target: dev            
+  outputs:
+    dev:
+      type: postgres    
+      host: localhost     
+      user: postgres      
+      password: post      
+      port: 5432          
+      dbname: transparencia 
+      schema: public     
+      threads: 1          

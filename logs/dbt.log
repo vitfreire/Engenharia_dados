@@ -1,0 +1,63 @@
+[0m14:19:59.386726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2CE04590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2D878050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2EF1BD90>]}
+
+
+============================== 14:19:59.401843 | 42efe2c1-7ed5-4828-add5-d9c8493b4a6b ==============================
+[0m14:19:59.401843 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:19:59.402953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\cmcp2lab2\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'invocation_command': 'dbt init scrapping.py', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:19:59.430272 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\cmcp2lab2\.dbt
+[0m14:20:21.406342 [debug] [MainThread]: Starter project path: C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\include\starter_project
+[0m14:20:21.427000 [info ] [MainThread]: 
+Your new dbt project "servidores" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:20:21.429301 [info ] [MainThread]: Setting up your profile.
+[0m14:21:10.747410 [error] [MainThread]: Encountered an error:
+
+[0m14:21:10.752366 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\cli\requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\cli\requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\dbt\task\init.py", line 242, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\click\termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\cmcp2lab2\Desktop\dados_3\venv\Lib\site-packages\click\termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m14:21:10.754399 [debug] [MainThread]: Command `dbt init` failed at 14:21:10.754217 after 71.60 seconds
+[0m14:21:10.754917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2EF6D350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2EF7D910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D2DE667A0>]}
+[0m14:21:10.755538 [debug] [MainThread]: Flushing usage events
+[0m14:21:11.117898 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:21:26.368149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E79DFC4590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E79EA38050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7A00DBD90>]}
+
+
+============================== 14:21:26.379760 | 193229d6-1e8f-4a89-9ec8-16cf8d0efc77 ==============================
+[0m14:21:26.379760 [info ] [MainThread]: Running with dbt=1.10.3
+[0m14:21:26.380741 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\cmcp2lab2\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init scrapping.py', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:21:49.151906 [info ] [MainThread]: A project called servidores already exists here.
+[0m14:21:49.153755 [debug] [MainThread]: Command `dbt init` succeeded at 14:21:49.153574 after 22.98 seconds
+[0m14:21:49.154288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7A00650F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7A01417F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E79F021AE0>]}
+[0m14:21:49.154858 [debug] [MainThread]: Flushing usage events
+[0m14:21:49.635718 [debug] [MainThread]: An error was encountered while trying to flush usage events
