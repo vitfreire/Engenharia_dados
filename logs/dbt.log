@@ -61,3 +61,53 @@ click.exceptions.Abort
 [0m14:21:49.154288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7A00650F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E7A01417F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E79F021AE0>]}
 [0m14:21:49.154858 [debug] [MainThread]: Flushing usage events
 [0m14:21:49.635718 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:48:17.451219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB7E785D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB7E4DA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB7E73B50>]}
+
+
+============================== 17:48:17.464059 | 7b0b11c6-d04f-490b-8ed5-d9837cdf6cad ==============================
+[0m17:48:17.464059 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:48:17.467296 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init dbt_project', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:48:17.535588 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\ACER\.dbt
+[0m17:48:17.541578 [info ] [MainThread]: A project called dbt_project already exists here.
+[0m17:48:17.543118 [debug] [MainThread]: Command `dbt init` succeeded at 17:48:17.543118 after 0.28 seconds
+[0m17:48:17.545115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB7E08450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB7E0A890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017EB133F190>]}
+[0m17:48:17.546113 [debug] [MainThread]: Flushing usage events
+[0m17:48:18.193146 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:07:20.539967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF7148CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF71B26D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF6ECA390>]}
+
+
+============================== 18:07:20.545728 | caeebe1f-2b03-469e-a710-18774e66c9a3 ==============================
+[0m18:07:20.545728 [info ] [MainThread]: Running with dbt=1.10.3
+[0m18:07:20.546725 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ACER\\.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:07:20.586761 [info ] [MainThread]: dbt version: 1.10.3
+[0m18:07:20.587758 [info ] [MainThread]: python version: 3.11.9
+[0m18:07:20.588614 [info ] [MainThread]: python path: C:\Users\ACER\Desktop\Engenharia_dados\venv\Scripts\python.exe
+[0m18:07:20.589616 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m18:07:20.590678 [info ] [MainThread]: Using profiles dir at C:\Users\ACER\.dbt
+[0m18:07:20.591743 [info ] [MainThread]: Using profiles.yml file at C:\Users\ACER\.dbt\profiles.yml
+[0m18:07:20.592807 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ACER\Desktop\Engenharia_dados\dbt_project.yml
+[0m18:07:20.594808 [info ] [MainThread]: Configuration:
+[0m18:07:20.595805 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m18:07:20.597800 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:07:20.598799 [info ] [MainThread]: Required dependencies:
+[0m18:07:20.600793 [debug] [MainThread]: Executing "git --help"
+[0m18:07:20.668519 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:07:20.669520 [debug] [MainThread]: STDERR: "b''"
+[0m18:07:20.669520 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:07:20.670648 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:07:20.671650 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:07:20.672908 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\ACER\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:07:20.674946 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ACER\Desktop\Engenharia_dados\dbt_project.yml> not found
+
+[0m18:07:20.676941 [debug] [MainThread]: Command `dbt debug` failed at 18:07:20.676941 after 0.26 seconds
+[0m18:07:20.677938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF063F210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF063F310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021AF714A890>]}
+[0m18:07:20.679894 [debug] [MainThread]: Flushing usage events
+[0m18:07:21.224089 [debug] [MainThread]: An error was encountered while trying to flush usage events

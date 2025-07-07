@@ -1,0 +1,12 @@
+transparencia:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: postgres
+      password: postgres24
+      port: 5432
+      dbname: transparencia
+      schema: public
+      threads: 1
