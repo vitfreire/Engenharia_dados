@@ -1,0 +1,8 @@
+prefect-version: 3.4.7
+
+deployments:
+  - name: pipeline_servidores_deploy
+    entrypoint: flows/flow_etl.py:pipeline_etl
+    work_pool:
+      name: default
+    tags: ["etl"]
