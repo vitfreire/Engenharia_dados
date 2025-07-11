@@ -4,4 +4,6 @@ venv/
 # DBT: arquivos temporários e de build
 dbt_project/target/
 dbt_project/logs/
+dbt_project/profiles.ymldbt_project/target/
+dbt_project/logs/
 dbt_project/profiles.yml
