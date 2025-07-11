@@ -1,0 +1,69 @@
+version: 2
+
+models:
+  - name: servidores_tratados
+    description: "Tabela tratada com dados dos servidores públicos de Alagoas extraídos da API"
+    columns:
+      - name: nome
+        description: "Nome completo do servidor"
+        tests:
+          - not_null
+
+      - name: cpf
+        description: "CPF anonimizado do servidor"
+        tests:
+          - not_null
+          - unique
+
+      - name: ano
+        description: "Ano da referência"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [2023]
+
+      - name: mes
+        description: "Mês da referência"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 12
+
+      - name: total
+        description: "Remuneração total recebida"
+        tests:
+          - not_null
+
+      - name: horas_extras
+        description: "Valor em horas extras"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+
+      - name: funcionario_id
+        description: "Identificador único do servidor"
+        tests:
+          - not_null
+
+      - name: numero_ordem
+        description: "Número de ordenação da folha"
+        tests:
+          - not_null
+
+      - name: descricao_orgao
+        description: "Órgão de lotação"
+        tests:
+          - not_null
+
+      - name: codigo_orgao
+        description: "Código/abreviação do órgão"
+        tests:
+          - not_null
+
+      - name: id
+        description: "Identificador único da linha no sistema"
+        tests:
+          - not_null
+          - unique
